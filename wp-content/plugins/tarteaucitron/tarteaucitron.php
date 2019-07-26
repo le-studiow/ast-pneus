@@ -18,7 +18,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function LRMTarteaucitron()
 {
-    $path = plugin_dir_path( __FILE__ );
-    wp_enqueue_script( 'lrmt-tarteaucitron', $path . '/js/tarteaucitron.js');
+    wp_enqueue_script( 'lrmt-tarteaucitron', plugins_dir_url() . 'tarteaucitron/js/tarteaucitron.js');
 }
 add_action('wp_enqueue_scripts', 'LRMTarteaucitron');
