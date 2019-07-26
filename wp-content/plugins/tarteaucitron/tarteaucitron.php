@@ -21,7 +21,7 @@ if ( ! class_exists( 'LRMTarteauCitron' ) ) {
         public function __construct()
         {
 			$this->plugin_path = plugin_dir_path( __FILE__ );
-            add_action('wp_head', [ $this, 'loadScripts' ]);
+            add_action('wp_footer', [ $this, 'loadScripts' ]);
         }
 
         private function loadScripts(): void
