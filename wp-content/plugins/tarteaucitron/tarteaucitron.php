@@ -19,5 +19,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 function LRMTarteaucitron()
 {
     wp_enqueue_script( 'lrmt-tarteaucitron', plugins_url() . '/tarteaucitron/js/tarteaucitron.js');
+    wp_enqueue_script( 'lrmt-tarteaucitron-custom', plugins_url() . '/tarteaucitron/js/custom.js');
 }
 add_action('wp_enqueue_scripts', 'LRMTarteaucitron');
