@@ -12,25 +12,14 @@
  * @package         Tarteaucitron
  */
 
-if ( ! class_exists( 'LRMTarteauCitron' ) ) {
-
-    class LRMTarteauCitron  {
-
-        private $plugin_path;
-
-        public function __construct()
-        {
-			$this->plugin_path = plugin_dir_path( __FILE__ );
-            add_action('wp_footer', [ $this, 'loadScripts' ]);
-        }
-
-        private function loadScripts(): void
-        {
-            wp_enqueue_script( 'lrmt-tarteaucitron', $this->plugin_path . '/js/tarteaucitron.js');
-        }
-
-    }
-
+if ( ! defined( 'ABSPATH' ) ) {
+	die( 'Not allowed' );
 }
 
-$LRMTarteauCitron = new LRMTarteauCitron();
+$path = plugin_dir_path( __FILE__ );
+
+function LRMTarteaucitron()
+{
+    wp_enqueue_script( 'lrmt-tarteaucitron', $path . '/js/tarteaucitron.js');
+}
+add_action('wp_enqueue_scripts', 'LRMTarteaucitron');
