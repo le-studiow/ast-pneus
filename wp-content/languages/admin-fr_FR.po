@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-06-28 07:18:26+0000\n"
+"PO-Revision-Date: 2019-07-13 16:56:13+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8749,8 +8749,8 @@ msgstr "Attention :"
 #: wp-admin/includes/class-wp-plugins-list-table.php:461
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-msgstr[0] "Prête à mettre à jour <span class=\"count\">(%s)</span>"
-msgstr[1] "Prêtes à mettre à jour <span class=\"count\">(%s)</span>"
+msgstr[0] "À mettre à jour <span class=\"count\">(%s)</span>"
+msgstr[1] "À mettre à jour <span class=\"count\">(%s)</span>"
 
 #. translators: %s: number of pending updates
 #: wp-admin/menu.php:46

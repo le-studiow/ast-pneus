@@ -1,0 +1,23 @@
+<?php if ( forminator_array_value_exists( $properties, 'forminator-poll-border-radius' ) ) { ?>
+	.forminator-poll-<?php echo $properties['form_id'] ?>.forminator-design--default {
+		border-radius: <?php echo $properties['forminator-poll-border-radius'] ?>px;
+	}
+<?php } else { ?>
+	.forminator-poll-<?php echo $properties['form_id'] ?>.forminator-design--default {
+		border-radius: 0;
+	}
+<?php } ?>
+<?php if ( forminator_array_value_exists( $properties, 'forminator-poll-border-width' ) ) { ?>
+	.forminator-poll-<?php echo $properties['form_id'] ?>.forminator-design--default {
+		border-width: <?php echo $properties['forminator-poll-border-width'] ?>px;
+	}
+<?php } else { ?>
+	.forminator-poll-<?php echo $properties['form_id'] ?>.forminator-design--default {
+		border-width: 0;
+	}
+<?php } ?>
+<?php if ( forminator_array_value_exists( $properties, 'forminator-poll-border-style' ) ) { ?>
+	.forminator-poll-<?php echo $properties['form_id'] ?>.forminator-design--default {
+		border-style: <?php echo $properties['forminator-poll-border-style'] ?>;
+	}
+<?php } ?>

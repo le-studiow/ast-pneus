@@ -1,0 +1,27 @@
+@include body-class(true) {
+
+	.sui-accordion {
+
+		// DESIGN: Table
+		// Must use in conjunction with .sui-table on the <table> element.
+		&.sui-table {
+
+			> tbody {
+
+				> .sui-accordion-item-content {
+
+					td {
+
+						@include media(max-width, md) {
+							padding-bottom: $sui-gutter-md;
+						}
+
+						@include media(min-width, md) {
+							padding-bottom: $sui-gutter;
+						}
+					}
+				}
+			}
+		}
+	}
+}

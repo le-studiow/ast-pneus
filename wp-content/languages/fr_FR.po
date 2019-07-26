@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-06-28 07:19:18+0000\n"
+"PO-Revision-Date: 2019-07-07 10:46:31+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11608,8 +11608,8 @@ msgstr "Non valide"
 #: wp-includes/formatting.php:3662
 msgid "%s year"
 msgid_plural "%s years"
-msgstr[0] "%s année"
-msgstr[1] "%s années"
+msgstr[0] "%s an"
+msgstr[1] "%s ans"
 
 #. translators: Time difference between two dates, in months. %s: Number of
 #. months
